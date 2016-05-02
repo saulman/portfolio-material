@@ -1,0 +1,58 @@
+<md-content layout-padding >
+	<div class="profile" layout="column" layout-align="center center">
+		<img class="avatar" src="files/mrRight.jpg" width="100" height="100">
+		<h3 class="md-title">SAULIUS SKEIRYS</h3>
+		<span class="md-caption">FRONT END DEVELOPER</span>
+		<div class="message-me">
+			<md-button class="md-raised md-primary" ng-click="messageMe()" alt="Email: saulius@skeirys.com">
+				<md-tooltip md-direction="top">
+					saulius@skeirys.com
+				</md-tooltip>
+				Message Me
+			</md-button>
+		</div>
+	</div>
+	<md-list flex-offset-gt-xs="15">
+		<md-list-item ng-click="redirect('home')" class="md-2-line" role="link" md-ink-ripple="md-clickable">
+			<div class="md-list-item-text">
+				<h5>ABOUT ME</h5>
+			</div>
+		</md-list-item>
+		<md-list-item ng-click="redirect('portfolio')" class="md-2-line" role="link" md-ink-ripple>
+			<div class="md-list-item-text">
+				<h5>PORTFOLIO</h5>
+			</div>
+		</md-list-item>
+		<md-list-item ng-click="download()" class="md-2-line" role="link" md-ink-ripple>
+			<div class="md-list-item-text">
+				<h5>RESUME</h5>
+			</div>
+		</md-list-item>
+		<md-list-item class="md-2-line" role="link" md-ink-ripple ng-click="messageMe()" alt="Email: saulius@skeirys.com">
+			<div class="md-list-item-text">
+				<h5>LET'S TALK</h5>
+			</div>
+		</md-list-item>
+	</md-list>
+	<div flex></div>
+	<div layout="row" layout-align="center end">
+		<md-button ng-href="https://www.linkedin.com/in/sauliusskeirys" target="_blank" class="md-icon-button" aria-label="More">
+			<md-tooltip md-direction="top">
+				linkedin.com/in/sauliusskeirys
+			</md-tooltip>
+			<ng-md-icon icon="linkedin-box" style="fill: #6C7A89" size="24"></ng-md-icon> 
+		</md-button>
+		<md-button ng-href="https://github.com/saulman" target="_blank" class="md-icon-button" aria-label="More">
+			<md-tooltip md-direction="top">
+				github.com/saulman
+			</md-tooltip>
+			<ng-md-icon icon="github-box" style="fill: #6C7A89" size="24"></ng-md-icon> 
+		</md-button>
+		<md-button ng-click="messageMe()" class="md-icon-button" aria-label="More">
+			<md-tooltip md-direction="top">
+				saulius@skeirys.com
+			</md-tooltip>
+			<ng-md-icon  icon="email" style="fill: #6C7A89" size="24"></ng-md-icon>
+		</md-button>
+	</div>
+</md-content>

@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic);
+
+body{
+  background: #ECECEC !important;
+}
+
+header md-toolbar {
+  position: absolute;
+  padding-bottom: 375px;
+}
+
+a{
+  color: #6C7A89 !important;
+  font-weight: 800;
+}
+
+md-content{
+  color: #6C7A89 !important;
+}
+
+#grid{
+  background: #ECECEC !important;
+  margin-top:50px;
+}
+
+#grid > md-content{
+  z-index: 3;
+}
+
+
+/* Additional styling */
+
+.text p {
+	line-height: 25px;
+}
+
+.message-me{
+	margin: 30px;
+}
+
+.main{
+  z-index: 3;
+/*  margin-top:-395px;*/
+}
+
+.profile{
+	padding: 40px !important;
+}
+
+.avatar{
+  border-radius: 50%;
+}
+
+.md-ink-ripple{
+  cursor:pointer;
+}
+
+
+@media screen and (max-width: 960px) {
+
+  header md-toolbar {
+    position: relative;
+    padding-bottom: 0px;
+  }
+
+  #grid{
+    margin-top:0px;
+  }
+
+}
